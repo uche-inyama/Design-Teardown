@@ -1,35 +1,72 @@
+/* darkest gray: #505050 */
+/*  */
+/* lighter gray 2: #BDBDBD */
+/* lighter gray: #E6E6E6 */
+/* lightest gray: #EEEEEE */
+header {
+ background-color: #EEE;
+}
+
 .main-header {
  padding: 0 30px;
 }
 
-.main-header .title {
- background-color: lightgray;
- margin-top: 20px;
-}
-
 .main-header ul {
- background-color: darkgray;
  display: grid;
  grid-template-columns: repeat(7, 1fr);
- height: 100px;
+ height: 180px;
 }
 
-.main-header li span {
- display: block;
+.main-header ul li {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 10px;
+}
+
+.main-header ul li:first-child, ul li:last-child {
+ justify-content: center;
+}
+
+.main-header .title, .sub-title {
  text-align: center;
 }
 
+.main-header .brand, .title, .topics {
+ width: 100%;
+}
+
+.main-header .brand {
+ background-color: #A0A0A0;
+ height: 60%;
+}
+
+.main-header .title {
+ background-color: #BDBDBD;
+ height: 60%;
+}
+
+.main-header .topics {
+ background-color: #A0A0A0;
+ height: 40%;
+ width: 80%;
+}
+
+.main-header .sub-title {
+ background-color: #E6E6E6;
+ height: 30%;
+ width: 100%;
+}
+
 .main-content {
+ background-color: #E6E6E6;
  position: relative;
 }
 
 .main-content p {
  left: 90px;
  position: absolute;
-}
-
-main {
- margin-top: 50px;
 }
 
 main p {
