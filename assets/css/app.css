@@ -1,20 +1,17 @@
-/** {
- box-sizing: border-box;
-}*/
 .main-header {
  padding: 0 30px;
 }
 
 .main-header .title {
- margin-top: 20px;
  background-color: lightgray;
+ margin-top: 20px;
 }
 
 .main-header ul {
- height: 100px;
+ background-color: darkgray;
  display: grid;
  grid-template-columns: repeat(7, 1fr);
- background-color: darkgray;
+ height: 100px;
 }
 
 .main-header li span {
@@ -27,8 +24,8 @@
 }
 
 .main-content p {
- position: absolute;
  left: 90px;
+ position: absolute;
 }
 
 main {
@@ -36,9 +33,9 @@ main {
 }
 
 main p {
- text-align: center;
  background-color: darkgray;
  margin: 0 500px;
+ text-align: center;
 }
 
 p span {
@@ -47,10 +44,10 @@ p span {
 }
 
 .article-summary {
+ background-color: darkgray;
  display: grid;
  grid-template-columns: repeat(2, 1fr);
  grid-template-rows: repeat(2, 300px);
- background-color: darkgray;
 }
 
 .article-summary div:nth-child(1), div:nth-child(4) {
