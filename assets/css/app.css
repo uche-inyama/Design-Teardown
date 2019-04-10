@@ -3,6 +3,7 @@
 /* lighter gray 2: #BDBDBD */
 /* lighter gray: #E6E6E6 */
 /* lightest gray: #EEEEEE */
+/* Header Section */
 header {
  background-color: #EEE;
 }
@@ -59,8 +60,8 @@ header {
  width: 100%;
 }
 
+/* Main Section */
 .main-content {
- background-color: #E6E6E6;
  position: relative;
 }
 
@@ -81,12 +82,39 @@ p span {
 }
 
 .article-summary {
- background-color: darkgray;
+ background-color: lightgray;
  display: grid;
  grid-template-columns: repeat(2, 1fr);
- grid-template-rows: repeat(2, 300px);
+ grid-template-rows: repeat(2, 650px);
+}
+
+.article-summary div {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
 }
 
 .article-summary div:nth-child(1), div:nth-child(4) {
- background-color: lightgray;
+ background-color: #E6E6E6;
+}
+
+.article-summary div span {
+ margin: 10px;
+ width: 80%;
+}
+
+.article-summary .author {
+ background-color: #A0A0A0;
+ height: 60px;
+ margin-top: 200px;
+}
+
+.article-summary .title {
+ background-color: #777;
+ height: 240px;
+}
+
+.article-summary .tags {
+ background-color: #A0A0A0;
+ height: 60px;
 }
