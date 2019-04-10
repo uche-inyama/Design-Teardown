@@ -65,20 +65,35 @@ header {
  position: relative;
 }
 
-.main-content p {
- left: 90px;
+.main-content .latest-articles {
+ left: 0;
+ margin-left: auto;
+ margin-right: auto;
  position: absolute;
-}
-
-main p {
- background-color: darkgray;
- margin: 0 500px;
+ right: 0;
  text-align: center;
+ top: 40px;
+ width: 400px;
 }
 
-p span {
- display: block;
- padding-bottom: 5px;
+.latest-articles {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.latest-articles span {
+ background-color: #777;
+ height: 60px;
+}
+
+.latest-articles span:first-child {
+ width: 100%;
+}
+
+.latest-articles span:last-child {
+ width: 40%;
 }
 
 .article-summary {
