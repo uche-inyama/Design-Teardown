@@ -18,3 +18,33 @@
 	display: block;
 	text-align: center;
 }
+.main-content{
+	position: relative;
+}
+.main-content p{
+	position: absolute;
+	left: 90px;
+}
+main{
+	margin-top: 50px ;
+}
+ main p{
+	text-align: center;
+	background-color: darkgray;
+	margin: 0 500px;
+
+}
+p span{
+	display: block;
+	padding-bottom: 5px;
+
+}
+.article-summary{
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 300px);
+	background-color: darkgray;
+}
+.article-summary div:nth-child(1), div:nth-child(4){
+	background-color: lightgray;
+}
