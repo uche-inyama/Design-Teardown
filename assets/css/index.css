@@ -20,9 +20,11 @@
 }
 .main-content{
 	position: relative;
+	z-index: 1;
 }
 .main-content p{
 	position: absolute;
+	z-index: 3;
 	left: 90px;
 }
 main{
@@ -47,4 +49,11 @@ p span{
 }
 .article-summary div:nth-child(1), div:nth-child(4){
 	background-color: lightgray;
+}
+.article-summary div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	vertical-align: center;
 }
