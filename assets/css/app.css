@@ -64,7 +64,6 @@ header {
 /*.main-content {
  position: relative;
 }*/
-
 .main-content .latest-articles {
  left: 0;
  margin-left: auto;
@@ -109,6 +108,7 @@ header {
  flex-direction: column;
 }
 
+/* NB: Interfering with classes of the lower div */
 .article-summary div:nth-child(1), div:nth-child(4) {
  background-color: #E6E6E6;
 }
@@ -133,65 +133,67 @@ header {
  background-color: #A0A0A0;
  height: 60px;
 }
-.resent-uploads{
-	display: grid;
-	grid-template: repeat(1, 500px)/ repeat(3, 3fr);
+
+/* Latest Posts Section */
+.latest-posts {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
 }
 
-.resent-uploads div:nth-child(1){
-	width: 100%;
-	height: 100%;
-	background-color: #EEEEEE;
-}
-.resent-uploads div:nth-child(2){
-	width: 100%;
-	height: 100%;
-	background-color: #EEEEEE;
+.latest-posts .article {
+ display: flex;
+ flex-direction: column;
+ height: 650px;
+ width: 25%;
 }
 
-.resent-uploads div:nth-child(3){
-	width: 100%;
-	height: 100%;
-	background-color: #EEEEEE;
-}
-.uploads{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:  center;
-}
-li.upload-list{
-	display: block;
-	width: 200px;
-	height: 150px;
-	background-color: lightgray;
-	border: solid 1px black;
-	margin-bottom: 20px;
-	/*margin-left: 20px;*/
-}
-li.upload-list1{
-	display: block;
-	width: 200px;
-	height: 150px;
-	background-color: lightgray;
-	border: solid 1px black;
-	margin-bottom:20px;
-}
-.friends_supporters{
-	margin: 0 30px;
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(1, 400px);
-	}
-.friends_supporters div:nth-child(1){
-	width: 200px;
-	height: 300px;
-	border: solid 1px black;
+.latest-posts .article-x2 {
+ height: 800px;
+ width: 50%;
 }
 
-.friends_supporters div:nth-child(2){
-	width: 500px;
-	height: 550px;
-	border: solid 1px black;
+.latest-posts .article-x2 .body {
+ background-color: #E6E6E6;
+ border-radius: 4px;
+ height: 80%;
+ margin: 0 auto;
+ width: 90%;
+}
 
+.latest-posts .article .title, .body {
+ margin: 0 auto;
+ width: 70%;
+}
+
+.latest-posts .article .title {
+ background-color: #BDBDBD;
+ height: 120px;
+ margin-top: 5rem;
+}
+
+.latest-posts .article .body {
+ background-color: #EEE;
+ height: 320px;
+ margin-top: 1rem;
+}
+
+.friends_supporters {
+ margin: 0 30px;
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ grid-template-rows: repeat(1, 400px);
+}
+
+.friends_supporters div:nth-child(1) {
+ width: 200px;
+ height: 300px;
+ border: solid 1px black;
+}
+
+.friends_supporters div:nth-child(2) {
+ width: 500px;
+ height: 550px;
+ border: solid 1px black;
 }
