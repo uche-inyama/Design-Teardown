@@ -179,6 +179,38 @@ header {
  margin-top: 1rem;
 }
 
+/* Newletter Section */
+.newsletter {
+ align-items: center;
+ background-color: #E6E6E6;
+ display: flex;
+ flex-direction: column;
+ height: 700px;
+ justify-content: flex-start;
+}
+
+.newsletter .title {
+ background-color: #808080;
+ height: 80px;
+ margin-top: 4rem;
+ width: 40%;
+}
+
+.newsletter .sub-title {
+ background-color: #909090;
+ height: 100px;
+ margin-top: 4rem;
+ width: 40%;
+}
+
+.newsletter .icon {
+ background-color: #505050;
+ border-radius: 50%;
+ height: 400px;
+ margin-top: 4rem;
+ width: 400px;
+}
+
 .friends_supporters {
  margin: 0 30px;
  display: grid;
