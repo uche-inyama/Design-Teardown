@@ -135,7 +135,7 @@ header {
 }
 
 /* Latest Posts Section */
-.latest-posts {
+.latest-posts, .curated-posts {
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
@@ -154,7 +154,7 @@ header {
  width: 50%;
 }
 
-.latest-posts .article-x2 .body {
+.latest-posts .article-x2 .body, .curated-posts .article-x2 .body {
  background-color: #E6E6E6;
  border-radius: 4px;
  height: 80%;
@@ -162,55 +162,63 @@ header {
  width: 90%;
 }
 
-.latest-posts .article .title, .body {
+.latest-posts .article .title, .curated-posts .article .title, .body {
  margin: 0 auto;
  width: 70%;
 }
 
-.latest-posts .article .title {
+.latest-posts .article .title, .curated-posts .article .title {
  background-color: #BDBDBD;
  height: 120px;
  margin-top: 5rem;
 }
 
-.latest-posts .article .body {
+.latest-posts .article .body, .curated-posts .article .body {
  background-color: #EEE;
  height: 320px;
  margin-top: 1rem;
 }
 
-/* Newletter Section */
-.newsletter {
- align-items: center;
- background-color: #E6E6E6;
+/* Curated Posts Section */
+.curated-posts .article {
  display: flex;
  flex-direction: column;
- height: 700px;
- justify-content: flex-start;
+ height: 650px;
+ width: 30%;
 }
 
-.newsletter .title {
+.curated-posts .article-x2 {
+ height: 800px;
+ width: 60%;
+}
+
+.curated-posts .article-x2 .body {
+ padding: 40px 0;
+}
+
+.curated-posts .article-x2 .ad-title {
  background-color: #808080;
  height: 80px;
- margin-top: 4rem;
+ margin: 0 auto 20px auto;
  width: 40%;
 }
 
-.newsletter .sub-title {
+.curated-posts .article-x2 .ad-paragraph {
  background-color: #909090;
- height: 100px;
- margin-top: 4rem;
- width: 40%;
+ height: 60px;
+ margin: 0 auto 20px auto;
+ width: 80%;
 }
 
-.newsletter .icon {
+.curated-posts .article-x2 .ad-large-icon {
  background-color: #505050;
  border-radius: 50%;
  height: 400px;
- margin-top: 4rem;
+ margin: 4rem auto 0 auto;
  width: 400px;
 }
 
+/* Community Links Section */
 .community-links {
  background-color: white;
  display: grid;
