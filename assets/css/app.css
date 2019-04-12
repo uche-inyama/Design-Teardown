@@ -1,0 +1,381 @@
+/* darkest gray: #505050 */
+/*  */
+/* lighter gray 2: #BDBDBD */
+/* lighter gray: #E6E6E6 */
+/* lightest gray: #EEEEEE */
+/* Header Section */
+header {
+ background-color: #EEE;
+}
+
+.main-header {
+ padding: 0 30px;
+}
+
+.main-header ul {
+ display: grid;
+ grid-template-columns: repeat(7, 1fr);
+ height: 180px;
+}
+
+.main-header ul li {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 10px;
+}
+
+.main-header ul li:first-child, ul li:last-child {
+ justify-content: center;
+}
+
+.main-header .title, .sub-title {
+ text-align: center;
+}
+
+.main-header .brand, .title, .topics {
+ width: 100%;
+}
+
+.main-header .brand {
+ background-color: #A0A0A0;
+ height: 60%;
+}
+
+.main-header .title {
+ background-color: #BDBDBD;
+ height: 60%;
+}
+
+.main-header .topics {
+ background-color: #A0A0A0;
+ height: 40%;
+ width: 80%;
+}
+
+.main-header .sub-title {
+ background-color: #E6E6E6;
+ height: 30%;
+ width: 100%;
+}
+
+/* Main Section */
+/*.main-content {
+ position: relative;
+}*/
+.main-content .latest-articles {
+ left: 0;
+ margin-left: auto;
+ margin-right: auto;
+ position: absolute;
+ right: 0;
+ text-align: center;
+ top: 220px;
+ width: 400px;
+}
+
+.latest-articles {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.latest-articles span {
+ background-color: #777;
+ height: 60px;
+}
+
+.latest-articles span:first-child {
+ width: 100%;
+}
+
+.latest-articles span:last-child {
+ width: 40%;
+}
+
+.article-summary {
+ background-color: lightgray;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(2, 650px);
+}
+
+.article-summary div {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+
+/* NB: Interfering with classes of the lower div */
+.article-summary div:nth-child(1), .article-summary div:nth-child(4) {
+ background-color: #E6E6E6;
+}
+
+.article-summary div span {
+ margin: 10px;
+ width: 80%;
+}
+
+.article-summary .author {
+ background-color: #A0A0A0;
+ height: 60px;
+ margin-top: 200px;
+}
+
+.article-summary .title {
+ background-color: #777;
+ height: 240px;
+}
+
+.article-summary .tags {
+ background-color: #A0A0A0;
+ height: 60px;
+}
+
+/* Latest Posts Section */
+.latest-posts, .curated-posts {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.latest-posts .article {
+ display: flex;
+ flex-direction: column;
+ height: 650px;
+ width: 25%;
+}
+
+.latest-posts .article-x2 {
+ height: 800px;
+ width: 50%;
+}
+
+.latest-posts .article-x2 .body, .curated-posts .article-x2 .body {
+ background-color: #E6E6E6;
+ border-radius: 4px;
+ height: 80%;
+ margin: 0 auto;
+ width: 90%;
+}
+
+.latest-posts .article .title, .curated-posts .article .title, .body {
+ margin: 0 auto;
+ width: 70%;
+}
+
+.latest-posts .article .title, .curated-posts .article .title {
+ background-color: #BDBDBD;
+ height: 120px;
+ margin-top: 5rem;
+}
+
+.latest-posts .article .body, .curated-posts .article .body {
+ background-color: #EEE;
+ height: 320px;
+ margin-top: 1rem;
+}
+
+/* Curated Posts Section */
+.curated-posts .article {
+ display: flex;
+ flex-direction: column;
+ height: 650px;
+ width: 30%;
+}
+
+.curated-posts .article-x2 {
+ height: 800px;
+ width: 60%;
+}
+
+.curated-posts .article-x2 .body {
+ padding: 40px 0;
+}
+
+.curated-posts .article-x2 .ad-title {
+ background-color: #808080;
+ height: 80px;
+ margin: 0 auto 20px auto;
+ width: 40%;
+}
+
+.curated-posts .article-x2 .ad-paragraph {
+ background-color: #909090;
+ height: 60px;
+ margin: 0 auto 20px auto;
+ width: 80%;
+}
+
+.curated-posts .article-x2 .ad-large-icon {
+ background-color: #505050;
+ border-radius: 50%;
+ height: 400px;
+ margin: 4rem auto 0 auto;
+ width: 400px;
+}
+
+/* Community Links Section */
+.community-links {
+ background-color: white;
+ display: grid;
+ grid-template: repeat(4, 350px)/repeat(2, 1fr);
+}
+
+.community-links div {
+ display: flex;
+ flex-direction: row;
+}
+
+.community-links span {
+ background-color: gray;
+ display: block;
+}
+
+.community-links .left {
+ background-color: #505050;
+ height: 100px;
+ margin-left: 30px;
+ margin-right: 30px;
+ margin-top: 80px;
+ width: 100px;
+}
+
+.community-links .right {
+ background-color: #E6E6E6;
+ height: 200px;
+ margin-right: 30px;
+ margin-top: 80px;
+ width: 400px;
+}
+
+.community-links div:nth-child(1) {
+ grid-column: 1/3;
+}
+
+.community-links .first-right {
+ background-color: #E6E6E6;
+ height: 200px;
+ margin-right: 30px;
+ margin-top: 80px;
+ width: 800px;
+}
+
+.community-links .first-left {
+ background-color: #505050;
+ height: 100px;
+ margin-left: 100px;
+ margin-right: 30px;
+ margin-top: 80px;
+ width: 100px;
+}
+
+.design-systems {
+ background-color: lightgray;
+ display: flex;
+ flex-direction: column;
+ height: 300px;
+ justify-content: space-between;
+ padding: 40px 100px;
+ width: 100%;
+}
+
+.design-systems div {
+ background-color: gray;
+}
+
+.design-systems div:nth-child(1) {
+ height: 30px;
+ width: 250px;
+}
+
+.design-systems div:nth-child(2) {
+ height: 50px;
+ width: 350px;
+}
+
+.design-systems div:nth-child(3) {
+ height: 100px;
+ width: 50%;
+}
+
+.design-systems div:nth-child(4) {
+ height: 50px;
+ width: 200px;
+}
+
+.topic-links {
+ background-color: #505050;
+ display: flex;
+ flex-direction: column;
+ height: 500px;
+ padding-top: 50px;
+}
+
+.topic-links div:nth-child(1) {
+ background-color: #EEEEEE;
+ height: 20px;
+ margin: 0 auto;
+ margin-bottom: 50px;
+ width: 40%;
+}
+
+.topic-links div:nth-child(2) {
+ background-color: #EEEEEE;
+ height: 200px;
+ margin: 0 auto;
+ margin-bottom: 50px;
+ width: 90%;
+}
+
+.topic-links div:nth-child(3) {
+ background-color: #EEEEEE;
+ height: 150px;
+ margin: 0 auto;
+ margin-bottom: 50px;
+ width: 40%;
+}
+
+.topic-links div:nth-child(4) {
+ background-color: #EEEEEE;
+ height: 100px;
+ margin: 0 auto;
+ margin-bottom: 50px;
+ width: 60%;
+}
+
+.smashing-conference {
+ align-items: center;
+ background-color: lightgray;
+ display: flex;
+ flex-direction: column;
+ height: 900px;
+ justify-content: center;
+ margin: 0 auto;
+ padding: 40px 0;
+ width: 100%;
+}
+
+.smashing-conference div:nth-child(1) {
+ background-color: #EEEEEE;
+ height: 250px;
+ margin-bottom: 50px;
+ width: 70%;
+}
+
+.smashing-conference div:nth-child(2) {
+ background-color: #EEEEEE;
+ height: 100px;
+ margin-bottom: 50px;
+ width: 40%;
+}
+
+.smashing-conference div:nth-child(3) {
+ background-color: #EEEEEE;
+ border-radius: 50%;
+ height: 400px;
+ width: 400px;
+}
